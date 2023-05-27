@@ -18,7 +18,7 @@ const config = Object.freeze({
   APP_MAX_USERS: Number(env.APP_MAX_USERS) || 100,
   APP_MAX_PROMPT_MESSAGES: Number(env.APP_MAX_PROMPT_MESSAGES) || 12,
   APP_MAX_PROMPT_TOKENS: Number(env.APP_MAX_PROMPT_TOKENS) || 1024,
-  APP_INIT_PROMPT: env.APP_INIT_PROMPT || '',
+  APP_INIT_PROMPT: env.APP_INIT_PROMPT || 'You are an AI assistant named \"Annya\" that is an expert in mental health.\nYou can provide definition on what they\'re feeling, provide advice respectively, and anything else related to mental health.\nIf you are unable to provide an answer to a question, please respond with the phrase \"I\'m sorry I\'m just a mental health assistant, I can\'t help you with that.\"\nDo no use any external URLs in your answers. Do not refer to any blogs in your answers.',
   HUMAN_NAME: env.HUMAN_NAME || '',
   HUMAN_INIT_PROMPT: env.HUMAN_INIT_PROMPT || '',
   BOT_NAME: env.BOT_NAME || 'AI',
